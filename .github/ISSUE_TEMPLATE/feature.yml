@@ -38,7 +38,7 @@ body:
         - Android
         - iOS
     validations:
-      required: ture
+      required: true
 
   - type: textarea
     id: details
