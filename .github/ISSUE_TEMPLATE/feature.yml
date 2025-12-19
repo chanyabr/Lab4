@@ -1,0 +1,50 @@
+name: Feature Request
+description: Thanks for taking the time to fill out this feature request!
+title: "[Feature:]"
+labels: "[]"
+
+body:
+  
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: What is your name?
+      placeholder: "ex. @email.com"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Type of request?
+      description: Select the type of your request
+      options:
+        - New Feature
+        - Bug fix
+        - Improvement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os-selection
+    attributes:
+      label: What is the OS which you want to suggest?
+      description: Selections
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+    validations:
+      required: ture
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What are the details of your suggestion?
+      description: Explain what do you want
+      placeholder: Feature details
+    validations:
+      required: true
